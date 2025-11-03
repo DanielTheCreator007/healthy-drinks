@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Drinks</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <h1>Healthy Drink Package</h1>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#order">Order now</a>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+      <h2>Fresh, Natural & Healthy Drinks</h2>
+      <p>Order refreshing drinks made from 100% organic fruits and veggies.</p>
+      <button class="cart-btn">Explore Menu</button>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+      <h2>Our Best Seller</h2>
+
+      <div class="drink">
+        <img
+          src="https://i0.wp.com/nextcashandcarry.com.ng/wp-content/uploads/2022/04/2Wfn0SC1gNmkm8buvohDKJJq7v9Jp6AvzT77CtTw.jpg?fit=1024%2C1024&ssl=1"
+          width="200"
+          height="200"
+          alt="Berry Blast"
+        />
+        <h3>Berry Blast</h3>
+        <p>Blueberries, strawberries, yogurt</p>
+        <button class="add-to-cart" data-name="Berry Blast" data-price="5.00">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="drink">
+        <img
+          src="https://simplegreensmoothies.com/wp-content/uploads/clear-skin-smoothie-healthy-diet-clean-eating-2.jpg"
+          width="200"
+          height="200"
+          alt="Green Smoothie"
+        />
+        <h3>Green Smoothie</h3>
+        <p>Spinach, apple, banana & ginger</p>
+        <button class="add-to-cart" data-name="Green Smoothie" data-price="6.00">
+          Add to Cart
+        </button>
+      </div>
+      <div class="drink">
+        <img
+          src="https://www.realsimple.com/thmb/It_xjI23E0qzyRBHhdPYOyribXY=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/drinks-for-gut-health-GettyImages-1303674898-3ddab74ff9a04c628df118139998e3eb.jpg"
+          width="200"
+          height="200"
+          alt="Orange Drink"
+        />
+         <h3>Orange Juice</h3>
+        <p>Orange & garlic</p>
+        <button class="add-to-cart" data-name="Orange Juice" data-price="4.00">
+          Add to Cart
+        </button>
+      </div>
+      <div class="drink">
+        <img
+          src="https://cdn.prod.website-files.com/63ed08484c069d0492f5b0bc/6541548b0512d1deb39f8af5_delicious-healthy-mocktails.jpeg"
+          width="200"
+          height="180"
+          alt="Straw Berry Drink"
+        />
+         <h3>Straw Berry Drink</h3>
+        <p>Straw Berry, Orange & Cinamon leaf</p>
+        <button class="add-to-cart" data-name="Straw Berry Drink" data-price="4.00">
+          Add to Cart
+        </button>
+      </div>
+      <div class="drink">
+        <img
+          src="https://veg.fit/wp-content/uploads/2021/06/Mango-Juice_VegFit.png"
+          width="220"
+          height="120"
+          alt=" Tangy Mango Juice"
+        />
+         <h3>Tangy Mango Juice</h3>
+        <p>Mango, Mint & Jaggery</p>
+        <button class="add-to-cart" data-name="Tangy Mango Juice" data-price="3.00">
+          Add to Cart
+        </button>
+      </div>
+      <div class="drink">
+        <img
+          src="https://veg.fit/wp-content/uploads/2021/06/Watermelon-Juice_VegFit.png"
+          width="220"
+          height="140"
+          alt="Refreshing Water Melon Juice"
+        />
+         <h3>Refreshing Water Melon Juice</h3>
+        <p>Pepper powder, Mint Leaves & Coconut Water</p>
+        <button class="add-to-cart" data-name="Refreshing Water Melon Juice" data-price="5.00">
+          Add to Cart
+        </button>
+      </div>
+<div class="drink">
+        <img
+          src="https://veg.fit/wp-content/uploads/2021/06/Pineapple-Juice_VegFit.png"
+          width="220"
+          height="140"
+          alt="Pine-Apple Juice"
+        />
+         <h3>Pine-Apple Juice</h3>
+        <p>Pine Apples, Roasted Cumin Powder & Black Salt</p>
+        <button class="add-to-cart" data-name="Pine-Apple Juice" data-price="4.00">
+          Add to Cart
+        </button>
+      </div>
+      <div class="drink">
+        <img
+          src="https://veg.fit/wp-content/uploads/2021/06/Rose-Lassi_VegFit.png"
+          width="220"
+          height="140"
+          alt="Rose Lassi"
+        />
+         <h3>Rose Lassie</h3>
+        <p>Chia Seeds, Chopped Pistachio & Few dried Petals of rose</p>
+        <button class="add-to-cart" data-name="Rose Lassi" data-price="4.00">
+          Add to Cart
+        </button>
+      </div>
+    </section>
+
+    <!-- 🛒 Live Cart Display Section -->
+    <section id="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p id="cart-total">Total: $0.00</p>
+      <button id="clear-cart">Clear Cart</button>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order">
+      <h2>Place Your Order</h2>
+      <form id="orderForm">
+        <label for="drink">Choose a Drink:</label>
+        <select id="drink">
+          <option value="Berry Blast">Berry Blast</option>
+          <option value="Green Smoothie">Green Smoothie</option>
+          <option value="Both">Both</option>
+        </select>
+        <label for="address">Address:</label>
+        <input
+          type="text"
+          id="address"
+          placeholder="Enter Address"
+          required
+        />
+
+        <button type="submit">Pay Now</button>
+      </form>
+    </section>
+
+    <!-- Link JavaScript -->
+    <script src="script.js"></script>
+  </body>
+  <!-- Footer Section -->
+<footer>
+  <div class="footer-container">
+    <!-- About & Policies -->
+    <div class="footer-section">
+      <h3>About</h3>
+      <p>Healthy Drink Packages brings you fresh, organic drinks delivered to your doorstep. We care about your health!</p>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Refund Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Customer Support -->
+    <div class="footer-section">
+      <h3>Customer Support</h3>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Track Order</a></li>
+      </ul>
+    </div>
+
+    <!-- Payment Methods -->
+    <div class="footer-section">
+      <h3>We Accept</h3>
+      <div class="payment-methods">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+        <img src=https://wp.logos-download.com/wp-content/uploads/2022/11/Verve_Logo.png?dl" alt="Verve">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa">
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Healthy Drink Packages. All rights reserved.</p>
+  </div>
+</footer>
+
+</html>
